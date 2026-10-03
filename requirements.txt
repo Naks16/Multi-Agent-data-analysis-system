@@ -1,0 +1,12 @@
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+langgraph>=0.2
+anthropic>=1.0
+# anthropic 1.x's HTTP client (httpx2) decodes Brotli responses with an API added in
+# brotli 1.2; older versions (e.g. conda's 1.0.9) fail with "Connection error".
+brotli>=1.2
+pydantic>=2.0
+python-dotenv>=1.0
+pytest>=8.0
+streamlit>=1.40

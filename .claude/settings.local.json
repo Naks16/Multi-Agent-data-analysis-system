@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python -c \"import pandas as pd; df=pd.read_csv\\('data/sales.csv',parse_dates=['date']\\); df['m']=df.date.dt.month; print\\(df.pivot_table\\(index='m',columns='region',values='revenue',aggfunc='sum'\\).round\\(0\\)\\); t=df.groupby\\('m'\\).revenue.sum\\(\\); print\\(\\(t/t.iloc[:2].mean\\(\\)-1\\).round\\(3\\)\\); print\\('nulls:',df.isna\\(\\).sum\\(\\).to_dict\\(\\)\\)\")"
+    ]
+  }
+}
