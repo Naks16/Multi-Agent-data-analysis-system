@@ -23,6 +23,7 @@ ENV/
 .env
 .env.*
 !.env.example
+.claude/
 
 # API keys / credentials
 *.pem
